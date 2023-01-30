@@ -26,8 +26,7 @@ class MainActivity : AppCompatActivity() {
 
             Toast.makeText(this, "주사위 go", Toast.LENGTH_LONG).show()
 
-            Log.d("mainactivity", Random.nextInt(1,6).toString())
-            Log.d("mainactivity", Random.nextInt(1,6).toString())
+
 
             val number1= Random.nextInt(1,6)
             val number2= Random.nextInt(1,6)
@@ -47,7 +46,21 @@ class MainActivity : AppCompatActivity() {
             }
 
 
-            diceImage2.setImageResource(R.drawable.dice_2)
+            if(number2==1){
+                diceImage2.setImageResource(R.drawable.dice_1)
+            }else if(number2==2){
+                diceImage2.setImageResource(R.drawable.dice_2)
+            }else if(number2==3) {
+                diceImage2.setImageResource(R.drawable.dice_3)
+            }else if(number2==4) {
+                diceImage2.setImageResource(R.drawable.dice_4)
+            }else if(number2==5) {
+                diceImage2.setImageResource(R.drawable.dice_5)
+            }else if(number2==6) {
+                diceImage2.setImageResource(R.drawable.dice_6)
+            }
+
+          //  diceImage2.setImageResource(R.drawable.dice_2)
 
            // Random.nextInt(1,6)
 
